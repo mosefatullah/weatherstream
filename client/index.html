@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>WeatherStream</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,10 +12,7 @@
 
 <body>
     <div class="row">
-        <div class="col-md-6" id="left">
-
-        </div>
-        <div class="col-md-6 d-flex" id="right">
+        <div class="col-md-8 d-flex" id="right">
             <div class="align-self-center m-auto text-center">
                 <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="Scattered Cloud" id="condition">
                 <p class="lead">
@@ -23,7 +20,8 @@
                     <br><strong><span id="main">Cloud</span></strong> ( <span id="description">Scattered Cloud</span> )
                     <br>
                     TEMP: <strong><span id="temp">25°C</span></strong>, PRESSURE: <strong><span
-                            id="pressure">1024</span></strong>, HUMIDITY: <strong><span id="humidity">76%</span></strong>
+                            id="pressure">1024</span></strong>, HUMIDITY: <strong><span
+                            id="humidity">76%</span></strong>
                 </p>
 
                 <input type="text" id="city-input" placeholder="Enter Your City Name" class="form-control">
@@ -55,6 +53,7 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-4" id="left"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

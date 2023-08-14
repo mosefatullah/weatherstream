@@ -1,2 +1,2 @@
-# project6
- (JS Project) WeatherStream - A Weather Application
+# JS Project - WeatherStream
+I used OpenWeatherMap RestAPI, VanillaJS, AxiosJS, NodeJS & ExpressJS on here.

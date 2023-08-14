@@ -20,6 +20,13 @@ body {
   background: #d8fed7;
 }
 
+#left {
+  background-image: url("https://cdn.dribbble.com/users/215810/screenshots/2747402/blimpy3.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 #right {
   min-height: 100vh;
   background: palegreen;
