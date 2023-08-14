@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherStream</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-8 d-flex" id="right">
+            <div class="align-self-center m-auto text-center">
+                <div class="alert alert-warning mt-3" id="alert" style="display: none;">
+                    <p class="m-0">Sorry, internet connection error</p>
+                </div>
+                <div id="loading" class="pt-5">
+                    <div class="spinner spinner-border"></div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div id="app" style="display: none;">
+                    <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="---" id="condition">
+                    <p class="lead">
+                        <strong><span id="city"></span>, <span id="country"></span></strong> <img id="country-icon"
+                            src="example" onerror="this.style.display='none'" alt="---">
+                        <br><strong><span id="main">---</span></strong> ( <span id="description">---</span> )
+                        <br>
+                        TEMP: <strong><span id="temp">---</span></strong>, PRESSURE: <strong><span
+                                id="pressure">---</span></strong>, HUMIDITY: <strong><span
+                                id="humidity">---</span></strong>
+                    </p>
+
+                    <input type="text" id="city-input" placeholder="Enter Your City Name" class="form-control">
+                    <small class="form-text text-muted">
+                        After Entering a Valid City Name Please Press Enter to Get Result of Weather
+                    </small>
+
+                    <h5 class="my-4">Recently Searched Results:</h5>
+                    <div class="my-5" id="historyElm">
+
+                    </div>
+                    <div id="master-history" class="card card-body my-2">
+                        <div class="d-flex">
+                            <div>
+                                <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="---" class="condition">
+                            </div>
+                            <div class="text-start">
+                                <p>
+                                    <strong><span class="city"></span>, <span class="country"></span></strong> <img
+                                        class="country-icon" src="example" onerror="this.style.display='none'"
+                                        alt="---">
+                                    <br><strong><span class="main">---</span></strong> ( <span
+                                        class="description">---</span>
+                                    )
+                                    <br>
+                                    TEMP: <strong><span class="temp">---</span></strong>, PRESSURE: <strong><span
+                                            class="pressure">---</span></strong>, HUMIDITY: <strong><span
+                                            class="humidity">---</span></strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4" id="left"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
