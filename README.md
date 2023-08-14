@@ -1,2 +1,2 @@
 # JS Project - WeatherStream
-I used OpenWeatherMap RestAPI, VanillaJS, AxiosJS, NodeJS & ExpressJS on here.
+I used OpenWeatherMap RestAPI, VanillaJS, AxiosJS, NodeJS & MongoDB on here.
