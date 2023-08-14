@@ -1,0 +1,30 @@
+#master-history {
+  display: none;
+}
+
+#condition {
+  width: 100px;
+  height: auto;
+}
+
+#branding {
+  width: 200px;
+  height: auto;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #d8fed7;
+}
+
+#right {
+  min-height: 100vh;
+  background: palegreen;
+}
+
+.row {
+  margin: 0;
+}
